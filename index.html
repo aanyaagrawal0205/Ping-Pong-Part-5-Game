@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Redressed&family=Shizuru&family=Yellowtail&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+        <link href="https://fonts.googleapis.com/css2?family=Redressed&family=Shizuru&family=Yellowtail&display=swap" rel="stylesheet">
+
+    </head>
+    <body background="background1.jpg">
+        <center>
+            <div id="heading_pingpong"class="btn-btn info">
+                PING PONG PING
+            </div>
+            <button id='modal' class="btn-btn success" data-toggle="modal" data-target="#myModal">
+                How To Play the Game
+            </button>
+            <br>
+            <button class="btn-btn warning , start_button" onclick="startGame()">Play Game</button>
+            <br>
+            <h3 id="status"></h3>
+            <br>
+            <div id="canvas"></div>
+            <button class="btn-btn warning , restart_button" onclick="restartGame()">Restart Game</button>
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&times;</button>
+                      <h4>Instructions</h4>
+                      <div class="modal-body">
+                        <div>1) First keep your laptop straight.</div1>
+                        <div>2) Move approximately 3-4 feet from the laptop.</div>
+                        <div>3) Move your right wrist in an ascending and descending manner, a red dot should appear on the right wrist.</div>
+                        <div>4) Now press the play button, and move again move yourself 3-4 feet away from the laptop.</div>
+                        <div>5) The red paddel is your right paddel, that will move as per the movement of the right wrist.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
